@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list style position</title>
+</head>
+<style>
+body {
+    font-family: times new roman;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 50px;
+}
+.kotak {
+    width: 300px;
+    border: 2px solid gray;
+    padding: 20px;
+}
+   ul {
+    width: 150px;}
+   li {
+    margin: 10px;}
+   ul.illuminations {
+    list-style-position: outside;}
+   ul.season {
+    list-style-position: inside;} 
+</style>
+<body>
+<div class="kotak">
+   <ul class="illuminations">
+    <li>That idol, black eyes and ...</li>
+    <li>Gracious son of Pan! ...</li>
+    <li>When the world is reduced ...</li>
+   </ul>
+</div>
+<div class="kotak">
+   <ul class="season">
+    <li>Once, if my memory serves ...</li>
+    <li>Hadn't I once a youth ...</li>
+    <li>Autumn already! ...</li>
+   </ul> 
+</div>
+</body>
+</html>

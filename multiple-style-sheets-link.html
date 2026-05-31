@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiple style sheets</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
+        color: #444;
+        padding: 20px;
+        border: 1px solid #ddd;
+    }
+    #content {
+        width: 500px;
+        background-color: white;
+        padding: 20px;
+        border: 1px solid #ddd;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    th {
+        background-color: #7da4b8;
+        color: white;
+        padding: 8px;
+        border: 1px solid #6d93a8;
+        font-size: 15px;
+    }
+    td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: center;
+        font-size: 14px;
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+
+    }
+    h1 {
+        font-size: 30px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    h2 {
+        color: #555;
+        letter-spacing: 3px;
+    }
+    p {
+        line-height: 1.6em;
+        color: #555;
+    }
+    .blue {
+        color: #5b8db1;
+        font-weight: bold;
+    }
+</style>   
+<body>
+<div id="content">
+    <h1>Central Park Bike Hire</h1> 
+    <p>Rent a bicyle to ride around Central Park.</p>
+    <table> 
+        <tr>
+            <th></th>
+            <th>Per Hour</th>
+            <th>Per Day</th>
+        </tr>
+        <tr>
+            <td>Cruiser</td>
+            <td>$9</td>
+            <td>$45</td>
+        </tr>
+        <tr>
+            <td>21 Speed</td>
+            <td>$15</td>
+            <td>$50</td>
+        </tr>
+    </table>
+    <h2>WHERE AND WHEN</h2>
+    <P class="blue">Loeb Boathouse</P>
+    <p>From April to November bicyles are available for hire from 9am to 5pm.</p>
+    <h2>DEPOSITS</h2>
+    <P class="blue">Cash or credit card</P>
+    <p>A $200 deposit is required for the hire of any of our bicyles.</p>
+</div>
+</body>
+</html>

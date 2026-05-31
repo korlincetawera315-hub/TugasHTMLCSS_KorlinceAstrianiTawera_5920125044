@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>empty cells</title>
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 50px;}
+td {
+    border: 1px solid #0088dd;
+    padding: 15px;
+    text-align: center;
+    font-size: 25px;}
+table.one {
+    empty-cells: show;}
+table.two {
+    empty-cells: hide;}     
+</style>
+<body>
+   <table class="one">
+    <tr>
+     <td>1</td>
+     <td>2</td>
+    </tr>
+    <tr>
+     <td>3</td>
+     <td></td>
+    </tr>
+   </table>
+   <table class="two">
+    <tr>
+        <td>1</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td></td>
+    </tr>
+   </table> 
+</body>
+</html>

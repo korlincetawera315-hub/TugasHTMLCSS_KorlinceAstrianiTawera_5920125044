@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elliptical shapes</title>
+</head>
+<style>
+    p {
+        display: inline-block;
+        margin: 20px;
+        width: 200px;
+        height: 150px;
+        border: 3px solid #d91e5f;
+    }
+    p.one {
+       border-top-left-radius: 80px 50px;
+       -moz-border-radius-top-left: 80px 50px;
+       -webkit-border-radius-top-left: 80px 50px;} 
+    p.two {
+        border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+        -moz-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+        -webkit-border-radius:  1em 4em 1em 4em / 2em 1em 2em 1em;}
+    p.three {
+        width: 150px;
+        height: 150px;
+        border: 3px solid #d91e5f;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        display: inline-block;
+        padding: 0;}
+</style>
+<body>
+    <p class="one"></p>
+    <p class="two"></p>
+    <p class="three"></p> 
+</body>
+</html>

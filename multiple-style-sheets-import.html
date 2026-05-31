@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiple style sheets</title>
+</head>
+<style>
+ @import url("tables.css"); 
+ @import url("typography.css"); 
+ body { 
+    color: #666666;
+    background-color: #f8f8f8;
+    text-align: center;} 
+ #page { 
+    width: 600px; 
+    text-align: left; 
+    margin-left: auto; 
+    margin-right: auto; 
+    border: 1px solid #d6d6d6; 
+    padding: 20px;} 
+h1 { 
+color: #547ca0;
+text-align: center;
+font-size: 70px;
+margin-bottom: 20px;
+}   
+#nav{
+    background: #eeeeee;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#nav a{
+    text-decoration: none;
+    color: #444444;
+    margin: 0 15px;
+    font-size: 18px;
+}
+#feature{
+    height: 120px;
+    background: #eeeeee;
+    text-align: center;
+    line-height: 120px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.article {
+    width: 300px;
+    float: left;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+#footer {
+    clear: both;
+    background: #eeeeee;
+    text-align: center;
+    padding: 30px;
+    margin-top: 20px;
+    font-size: 25px;
+}   
+</style>
+<body>
+div id="page">
+    <h1>Logo</h1>
+    <div id="nav">
+        <a href="#">home</a>
+        <a href="#">products</a>
+        <a href="#">services</a>
+        <a href="#">about</a>
+        <a href="#">contact</a>
+    </div>
+    <div id="feature">feature</div>
+    <div class="article column1">column one</div>
+    <div class="article column2">column two</div>
+    <div class="article column3">column three</div>
+    <div id="footer">©copyright 2011</div>    
+</body>
+</html>

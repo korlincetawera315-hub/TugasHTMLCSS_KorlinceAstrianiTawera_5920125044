@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border width</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        flex-direction: 10px;
+        gap: 20px;
+        padding: 20px;
+        background-color: #f0f0f0;
+    }
+    .box {
+      border: 2px solid black;
+      padding: 10px;
+      width: fit-content;
+      max-width: 300px;
+      font-family: sans-serif;
+      background-color: white;
+      font-size: 1.3rem;
+      line-height: 1.3;  
+    }
+    .box-1 {
+        box-shadow: 1px 2px 2px 2px;
+    }
+    .box-2 {
+        box-shadow: 1px 2px 2px 6px;
+    }
+    .box-3 {
+        box-shadow: 1px 9px 2px 4px;
+    }
+</style>
+<body>
+ <div class="container">
+    <div class="box box-1">
+         Hohner's "clavinet" is essentially an electric clavichord.
+    </div>
+    <div class="box box-2">
+         Hohner's "calvinet" is essentially an electric clavichord.
+    </div>
+    <div class="box box-3">
+         Hohner's "clavinet" is essentially an electric clavichord.
+    </div>   
+</body>
+</html>

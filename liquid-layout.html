@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquid Layout</title>
+<style>
+body {
+   width: 90%;
+   margin: 0 auto;
+   font-family: Arial, sans-serif;
+}
+#content {
+   overflow: auto;
+}
+#nav,
+#feature,
+#footer {
+margin: 1%;
+}
+.column1,
+.column2,
+.column3 {
+   width: 31.3%;
+   float: left;
+   margin: 1%;}
+.column3 {
+   margin-right: 0%;
+}
+li {
+   display: inline;
+   padding: 0.5em;
+}
+#nav,
+#footer {
+   background-color: #efefef;
+   padding: 0.5em 0;
+}
+#feature,
+.article {
+   height: 10em;
+   margin-bottom: 1em;
+   background-color: #efefef;
+   text-align: center;
+   line-height: 10em;
+} 
+</style>
+</head>
+<body>
+ <div id="header">
+  <h1 align="center">Logo</h1>
+  <div id="nav">
+   <ul>
+    <ul align="center">
+    <li>Home</li>
+    <li>Products</li>
+    <li>Services</li>
+    <li>About</li>
+    <li>Contact</li>
+   </ul>
+  </div>
+ </div>
+ <div id="content">
+  <div id="feature">
+   <p>Feature</p>
+  </div>
+  <div class="article column1">
+   <p>Column One</p>
+  </div>
+  <div class="article column2">
+   <p>Column Two</p>
+  </div>
+  <div class="article column3">
+   <p>Column Three</p>
+  </div>
+ </div>
+ <div id="footer">
+   <p align="center">
+  & copy; Copyright 2011</p>
+ </div>
+</body>

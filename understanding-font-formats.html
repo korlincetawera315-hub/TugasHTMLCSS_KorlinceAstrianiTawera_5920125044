@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Font Formats</title>
+    <style>
+        @font-face {
+            font-family: 'ChunkFiveRegular';
+            src: url('fonts/chunkfive.eot');
+            src: url('fonts/chunkfive.eot?#iefix') 
+                format('embedded-opentype'),
+                url('fonts/chunkfive.woff') format('woff'),
+                url('fonts/chunkfive.ttf') 
+                 format('truetype'),
+                url('fonts/chunkfive.svg#ChunkFiveRegular') 
+                format('svg');}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background: #f5f5f5;
+            color: #333;
+        }
+        h1 {
+            font-family: 'ChunkFiveRegular', sans-serif;
+            color: #777;
+        }
+        .code-box {
+            background: #eee;
+            padding: 20px;
+            border-left: 6px solid #ff4081;
+            font-family: monospace;
+            white-space: pre-line;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px auto;
+        }
+        th, td {
+            border-bottom: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        th{
+            color: #ff4081;
+        }
+        .dot {
+            width: 12px;
+            height: 12px;
+            background: #ff4081;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .text-section {
+            margin-top: 30px;
+            display: flex;
+            gap: 20px;
+        }
+        .tex-box {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>BROWSER</th>
+            <th colspan="4">FORMAT</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td>eot</td>
+            <td>woff</td>
+            <td>ttf / otf</td>
+            <td>svg</td>
+        </tr>
+        <tr>
+            <td>Chrome (all)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span class="dot"></span></td> 
+        </tr>
+        <tr>
+            <td>Chrome 6+</td>
+            <td></td>
+            <td><span class="dot"></span></td>
+            <td><span class="dot"></span></td>
+            <td><span class="dot"></span></td> 
+        </tr>
+        <tr>
+            <td>Firefox 3.5</td>
+            <td></td>
+            <td></td>
+            <td><span class="dot"></span></td> 
+            <td></td>
+        </tr>
+        <tr>
+            <td>Firefox 3.6+</td>
+            <td></td>
+            <td><span class="dot"></span></td>
+            <td><span class="dot"></span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>IE 5-8</td>
+            <td><span class="dot"></span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>IE 9+</td>
+            <td><span class="dot"></span></td>
+            <td><span class="dot"></span></td>
+            <td><span class="dot"></span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Safari 3.1+</td>
+            <td></td>
+            <td></td>
+            <td><span class="dot"></span></td>
+            <td><span class="dot"></span></td>
+        </tr>
+        <tr>
+            <td>iOS 4.2 </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span class="dot"></span></td>
+        </tr>
+        <tr>
+            <td>iOS 4.2+</td>
+            <td></td>
+            <td></td>
+            <td><span class="dot"></span></td>
+            <td><span class="dot"></span></td>
+        </tr>
+    </table>
+     <div class="text-section">
+        <div class="text-box">
+    </div>
+    <div class="text-box">
+     </div>
+    </div>
+</body>
+</html>
